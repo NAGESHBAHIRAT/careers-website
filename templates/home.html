@@ -7,35 +7,52 @@
     <style>
   #banner{
     height: 360px;
-    width:1100px;
+    width:2200px;
+    margin-bottom:16px;
     object-fit:cover;
     }
     </style>
   </head>
   <body>
-    <div class="container">
-    <titLE>Careers</titLE>
-  </body>
+    
       
-      <h1 class="text-center mt-4 mb-4"">Carrers</h1>
+    <titLE>Awningtechnologies.com</titLE>
+  </body>
+      {% include 'nav.html' %}
       <img class="img-fluid" id="banner" class="text-center" src="https://f1ac6ec8-4958-41a6-a48b-56ea591281c9-00-3rn7sqcskmzn5.pike.replit.dev/static/j1.jpeg">
-      <h2 class="text-center mt-2">About Company</h2>
+
+     <div class="container">
+  
+      
+      
+      <h1 class="text-center mt-2">About Awning</h1>
       <p class="text-center" class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac tortor vitae purus faucibus ornare suspendisse sed nisi. Eget mi proin sed libero enim sed faucibus turpis. Eu facilisis sed odio morbi quis commodo odio. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Justo nec ultrices dui sapien. In egestas erat imperdiet sed euismod nisi. Tortor dignissim convallis aenean et tortor. Massa sed elementum tempus egestas sed sed. Aliquet porttitor lacus luctus accumsan tortor. Pulvinar pellentesque habitant morbi tristique senectus et. Ac tortor vitae purus faucibus ornare suspendisse sed. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Neque aliquam vestibulum morbi blandit cursus risus at. Non pulvinar neque laoreet suspendisse interdum consectetur libero.
-  
-  
-    <h2 class="text-center">Open Position</h2>
-    <div>
-      {% for job in jobs %}
-        {% include 'jobitem.html' %}
-      {% endfor %}
-    </div>
-  
-    </p>
-  
+    
+       
+       <h1 class="text-center">Our services</h1>
+
+       <div>
+         
+           {% include 'service.html' %}
+
+         
+       </div>
+        <h2 class="text-center">Open Position</h2>
+       <div>
+         {% for job in jobs %}
+           {% include 'jobitem.html' %}
+         {% endfor %}
+       </div>
+       
   <div class="text-center">
   
     <button class="btn btn-primary btn-lg mb-2">Contact Us</button>
-      <p class="text-center mt=4 ">Copyright 2024, carrer</p>
     
+  
+      
+  </div>
+  {% include 'footer.html' %}
+</div>
+  
 </html>
